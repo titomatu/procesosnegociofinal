@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.13.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.BDCodeudor">
+            <fields>
+                <field type="STRING" length="255" name="tipodocumento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="numerodocumento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombre" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="segundo_nombre" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="apellido" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="segundo_apellido" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="ingresos_mmensuales" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="actividad_economicaCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="fecha_nacimientoCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="ciudad_residenciaCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="valor_ingresosCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="valor_egresosCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_residenciaCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="generoCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_contratoCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nivel_estudioCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_inmuebleCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="valor_arriendoCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="celularCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="telefonoCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="estado_civilCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="profesionCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="correoCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="autoriza_centralesCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="id_cod" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="columna1" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="columna2" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="columna3" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.BDCredito">
+            <fields>
+                <field type="STRING" length="255" name="tipocredito" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codconvenio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="valorsolicitado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="plazo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.BDDeudor">
+            <fields>
+                <field type="STRING" length="255" name="nombre1" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombre2" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="apellido1" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="apellido2" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_documento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="numero_documento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="actividad_economica" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="fecha_nacimiento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="ciudad_residencia" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="valor_ingresos" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="valor_egresos" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_residencia" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="genero" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_contrato" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nivel_estudio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_inmueble" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="valor_arriendo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="celular" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="telefono" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="estado_civil" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="profesion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="correo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="autoriza_centrales" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
