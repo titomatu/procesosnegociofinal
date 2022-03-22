@@ -807,64 +807,78 @@
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_89b6saoKEeyrt_x-ACIiEA" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_89b6sKoKEeyrt_x-ACIiEA" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_89b6sqoKEeyrt_x-ACIiEA" name="" content="" returnTypeFixed="true"/>
-        <connectors xmi:type="process:Connector" xmi:id="_2KrdYKoeEeyrt_x-ACIiEA" name="recuperarObjetoTest" definitionId="salesforce-retrievesobjects" event="ON_FINISH" ignoreErrors="true" definitionVersion="1.0.1">
-          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_2KrdYaoeEeyrt_x-ACIiEA" definitionId="salesforce-retrievesobjects" version="1.0.1" modelVersion="7.12.0-004">
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdYqoeEeyrt_x-ACIiEA" key="username">
-              <expression xmi:type="expression:Expression" xmi:id="_2KrdY6oeEeyrt_x-ACIiEA" name="tamatu@tamatu.io" content="tamatu@tamatu.io"/>
+        <connectors xmi:type="process:Connector" xmi:id="_nyv_cKonEeyrt_x-ACIiEA" name="crearOportunidadCredito" definitionId="salesforce-createsobject" event="ON_FINISH" definitionVersion="1.0.1">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_nywmgKonEeyrt_x-ACIiEA" definitionId="salesforce-createsobject" version="1.0.1" modelVersion="7.12.0-004">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmgaonEeyrt_x-ACIiEA" key="username">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmgqonEeyrt_x-ACIiEA" name="tamatu@tamatu.io" content="tamatu@tamatu.io"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdZKoeEeyrt_x-ACIiEA" key="password">
-              <expression xmi:type="expression:Expression" xmi:id="_2KrdZaoeEeyrt_x-ACIiEA" name="azrael0526" content="azrael0526"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmg6onEeyrt_x-ACIiEA" key="password">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmhKonEeyrt_x-ACIiEA" name="azrael0526" content="azrael0526"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdZqoeEeyrt_x-ACIiEA" key="securityToken">
-              <expression xmi:type="expression:Expression" xmi:id="_2KrdZ6oeEeyrt_x-ACIiEA" name="iMxbSFuRS4Jg5iGh8uKPVINoC" content="iMxbSFuRS4Jg5iGh8uKPVINoC"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmhaonEeyrt_x-ACIiEA" key="securityToken">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmhqonEeyrt_x-ACIiEA" name="iMxbSFuRS4Jg5iGh8uKPVINoC" content="iMxbSFuRS4Jg5iGh8uKPVINoC"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdaKoeEeyrt_x-ACIiEA" key="authEndpoint">
-              <expression xmi:type="expression:Expression" xmi:id="_2KrdaaoeEeyrt_x-ACIiEA" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmh6onEeyrt_x-ACIiEA" key="authEndpoint">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmiKonEeyrt_x-ACIiEA" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdaqoeEeyrt_x-ACIiEA" key="serviceEndpoint">
-              <expression xmi:type="expression:Expression" xmi:id="_2Krda6oeEeyrt_x-ACIiEA" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmiaonEeyrt_x-ACIiEA" key="serviceEndpoint">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmiqonEeyrt_x-ACIiEA" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdbKoeEeyrt_x-ACIiEA" key="restEndpoint">
-              <expression xmi:type="expression:Expression" xmi:id="_2KrdbaoeEeyrt_x-ACIiEA" content="" returnTypeFixed="true"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmi6onEeyrt_x-ACIiEA" key="restEndpoint">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmjKonEeyrt_x-ACIiEA" content="" returnTypeFixed="true"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdbqoeEeyrt_x-ACIiEA" key="proxyHost">
-              <expression xmi:type="expression:Expression" xmi:id="_2Krdb6oeEeyrt_x-ACIiEA" content="" returnTypeFixed="true"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmjaonEeyrt_x-ACIiEA" key="proxyHost">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmjqonEeyrt_x-ACIiEA" content="" returnTypeFixed="true"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdcKoeEeyrt_x-ACIiEA" key="proxyPort">
-              <expression xmi:type="expression:Expression" xmi:id="_2KrdcaoeEeyrt_x-ACIiEA" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmj6onEeyrt_x-ACIiEA" key="proxyPort">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmkKonEeyrt_x-ACIiEA" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdcqoeEeyrt_x-ACIiEA" key="proxyUsername">
-              <expression xmi:type="expression:Expression" xmi:id="_2Krdc6oeEeyrt_x-ACIiEA" content="" returnTypeFixed="true"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmkaonEeyrt_x-ACIiEA" key="proxyUsername">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmkqonEeyrt_x-ACIiEA" content="" returnTypeFixed="true"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrddKoeEeyrt_x-ACIiEA" key="proxyPassword">
-              <expression xmi:type="expression:Expression" xmi:id="_2KrddaoeEeyrt_x-ACIiEA" content="" returnTypeFixed="true"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmk6onEeyrt_x-ACIiEA" key="proxyPassword">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmlKonEeyrt_x-ACIiEA" content="" returnTypeFixed="true"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrddqoeEeyrt_x-ACIiEA" key="connectionTimeout">
-              <expression xmi:type="expression:Expression" xmi:id="_2Krdd6oeEeyrt_x-ACIiEA" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmlaonEeyrt_x-ACIiEA" key="connectionTimeout">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmlqonEeyrt_x-ACIiEA" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdeKoeEeyrt_x-ACIiEA" key="readTimeout">
-              <expression xmi:type="expression:Expression" xmi:id="_2KrdeaoeEeyrt_x-ACIiEA" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywml6onEeyrt_x-ACIiEA" key="readTimeout">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmmKonEeyrt_x-ACIiEA" name="0" content="0" returnType="java.lang.Integer" returnTypeFixed="true"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdeqoeEeyrt_x-ACIiEA" key="sObjectType">
-              <expression xmi:type="expression:Expression" xmi:id="_2Krde6oeEeyrt_x-ACIiEA" name="Contact" content="Contact" returnTypeFixed="true"/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmmaonEeyrt_x-ACIiEA" key="sObjectType">
+              <expression xmi:type="expression:Expression" xmi:id="_nywmmqonEeyrt_x-ACIiEA" name="Opportunity" content="Opportunity" returnTypeFixed="true"/>
             </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2KrdfKoeEeyrt_x-ACIiEA" key="sObjectIds">
-              <expression xmi:type="expression:ListExpression" xmi:id="_2KrdfaoeEeyrt_x-ACIiEA">
-                <expressions xmi:type="expression:Expression" xmi:id="_2KrdfqoeEeyrt_x-ACIiEA" name="0038c00002j4nOAAAY" content="0038c00002j4nOAAAY"/>
-              </expression>
-            </parameters>
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2Krdf6oeEeyrt_x-ACIiEA" key="fieldsToRetrieve">
-              <expression xmi:type="expression:ListExpression" xmi:id="_2KrdgKoeEeyrt_x-ACIiEA">
-                <expressions xmi:type="expression:Expression" xmi:id="_2KrdgaoeEeyrt_x-ACIiEA" content=""/>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nywmm6onEeyrt_x-ACIiEA" key="fieldValues">
+              <expression xmi:type="expression:TableExpression" xmi:id="_nywmnKonEeyrt_x-ACIiEA">
+                <expressions xmi:type="expression:ListExpression" xmi:id="_XwyzMKoxEeyrt_x-ACIiEA">
+                  <expressions xmi:type="expression:Expression" xmi:id="_XwyzMaoxEeyrt_x-ACIiEA" name="Name" content="Name"/>
+                  <expressions xmi:type="expression:Expression" xmi:id="_XwyzMqoxEeyrt_x-ACIiEA" name="SOLICITUD CREDITO BANCA DIGITAL" content="SOLICITUD CREDITO BANCA DIGITAL"/>
+                </expressions>
+                <expressions xmi:type="expression:ListExpression" xmi:id="_XwyzM6oxEeyrt_x-ACIiEA">
+                  <expressions xmi:type="expression:Expression" xmi:id="_XwyzNKoxEeyrt_x-ACIiEA" name="StageName" content="StageName"/>
+                  <expressions xmi:type="expression:Expression" xmi:id="_XwyzNaoxEeyrt_x-ACIiEA" name="Needs Analysis" content="Needs Analysis"/>
+                </expressions>
+                <expressions xmi:type="expression:ListExpression" xmi:id="_XwyzNqoxEeyrt_x-ACIiEA">
+                  <expressions xmi:type="expression:Expression" xmi:id="_XwyzN6oxEeyrt_x-ACIiEA" name="CloseDate" content="CloseDate"/>
+                  <expressions xmi:type="expression:Expression" xmi:id="_XwyzOKoxEeyrt_x-ACIiEA" name="newScript()" content="new Date()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date"/>
+                </expressions>
+                <expressions xmi:type="expression:ListExpression" xmi:id="_XwyzPKoxEeyrt_x-ACIiEA">
+                  <expressions xmi:type="expression:Expression" xmi:id="_XwyzPaoxEeyrt_x-ACIiEA" name="Amount" content="Amount"/>
+                  <expressions xmi:type="expression:Expression" xmi:id="_XwyzPqoxEeyrt_x-ACIiEA" name="newScript()" content="bdCredito.valorsolicitado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ChYSUKo1Eeyrt_x-ACIiEA" name="bdCredito" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDCredito"/>
+                  </expressions>
+                </expressions>
               </expression>
             </parameters>
           </configuration>
-          <outputs xmi:type="expression:Operation" xmi:id="_2KrdgqoeEeyrt_x-ACIiEA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_2Krdg6oeEeyrt_x-ACIiEA"/>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_2KrdhKoeEeyrt_x-ACIiEA" name="sObjects" content="sObjects" type="CONNECTOR_OUTPUT_TYPE" returnType="java.util.List">
-              <referencedElements xmi:type="definition:Output" xmi:id="_2KrdhaoeEeyrt_x-ACIiEA" name="sObjects" type="java.util.List"/>
+          <outputs xmi:type="expression:Operation" xmi:id="_w0BxsKoyEeyrt_x-ACIiEA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_w0BxsaoyEeyrt_x-ACIiEA" name="resultadoSf" content="resultadoSf" type="TYPE_VARIABLE">
+              <referencedElements xmi:type="process:Data" xmi:id="_w0BxsqoyEeyrt_x-ACIiEA" name="resultadoSf" dataType="_5E0eAKfTEeyTON15L57GOg"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_w0Bxs6oyEeyrt_x-ACIiEA" name="saveResult()" content="saveResult.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="definition:Output" xmi:id="_w0BxtKoyEeyrt_x-ACIiEA" name="saveResult" type="com.sforce.soap.partner.SaveResult"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_2KrdhqoeEeyrt_x-ACIiEA" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_w0BxtaoyEeyrt_x-ACIiEA" type="ASSIGNMENT"/>
           </outputs>
         </connectors>
         <loopCondition xmi:type="expression:Expression" xmi:id="_89b6s6oKEeyrt_x-ACIiEA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -882,8 +896,14 @@
       <data xmi:type="process:BusinessObjectData" xmi:id="_eZnkwKmWEeyv491rbMHhOA" name="bdCodeudor" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDCodeudor">
         <defaultValue xmi:type="expression:Expression" xmi:id="_eZnkwamWEeyv491rbMHhOA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
+      <data xmi:type="process:Data" xmi:id="_4jAbIKooEeyrt_x-ACIiEA" name="resultadoSf" dataType="_5E0eAKfTEeyTON15L57GOg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_4jAbIaooEeyrt_x-ACIiEA" content=""/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_5n60wKooEeyrt_x-ACIiEA" name="otraSf" dataType="_5E0eAKfTEeyTON15L57GOg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_5n60waooEeyrt_x-ACIiEA" content=""/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_5M6DD6fTEeyTON15L57GOg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_-r_W8Kn5Eeyrt_x-ACIiEA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_uxojgKovEeyrt_x-ACIiEA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_5M6DEafTEeyTON15L57GOg">
         <targetForm xmi:type="expression:Expression" xmi:id="_5M6DEqfTEeyTON15L57GOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1175,7 +1195,7 @@
         <stepSummary xmi:type="expression:Expression" xmi:id="_H2Ij86fZEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
       </elements>
       <formMapping xmi:type="process:FormMapping" xmi:id="_5OILEKfTEeyTON15L57GOg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_-d9iAKn5Eeyrt_x-ACIiEA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_uj4bYKovEeyrt_x-ACIiEA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_5OILEqfTEeyTON15L57GOg">
         <targetForm xmi:type="expression:Expression" xmi:id="_5OILE6fTEeyTON15L57GOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
