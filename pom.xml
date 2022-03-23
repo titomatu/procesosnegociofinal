@@ -5,7 +5,7 @@
   <groupId>com.company</groupId>
   <artifactId>avvillas</artifactId>
   <version>1.0</version>
-  <name>procesosnegociofinal2</name>
+  <name>procesosnegociofinal</name>
   <properties>
     <bonita.runtime.version>7.13.0</bonita.runtime.version>
     <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
