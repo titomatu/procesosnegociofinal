@@ -463,7 +463,7 @@
         </contract>
         <expectedDuration xmi:type="expression:Expression" xmi:id="_V6jgCamREeyv491rbMHhOA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
       </elements>
-      <elements xmi:type="process:Task" xmi:id="_Z46WgKmSEeyv491rbMHhOA" name="Datos Solicitante" outgoing="_br3lEKmWEeyv491rbMHhOA" incoming="_7PjckKoKEeyrt_x-ACIiEA" actor="_J_4m0KhqEey296gXUrZA2g">
+      <elements xmi:type="process:Task" xmi:id="_Z46WgKmSEeyv491rbMHhOA" name="Datos Solicitan" outgoing="_br3lEKmWEeyv491rbMHhOA" incoming="_7PjckKoKEeyrt_x-ACIiEA" actor="_J_4m0KhqEey296gXUrZA2g">
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_ZePMsamSEeyv491rbMHhOA" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_ZePMsKmSEeyv491rbMHhOA" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_ZePMsqmSEeyv491rbMHhOA" name="" content="" returnTypeFixed="true"/>
@@ -973,7 +973,21 @@
             <users xmi:type="actormapping:Users" xmi:id="_1gPaKakqEey02rEca7xK5w"/>
           </actorMapping>
         </actorMappings>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_1gIscakqEey02rEca7xK5w" id="CONNECTOR"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_JXAwkKo5Eey4q8AylnUkcQ" type="CONNECTOR" definitionId="twitter-update-status" definitionVersion="1.0.0" implementationId="twitter-update-status-impl" implementationVersion="1.2.1"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_JXOzAqo5Eey4q8AylnUkcQ" type="CONNECTOR" definitionId="salesforce-createsobject" definitionVersion="1.0.1" implementationId="salesforce-createsobject-impl" implementationVersion="1.1.3"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_1gIscakqEey02rEca7xK5w" id="CONNECTOR">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_JXJ6gKo5Eey4q8AylnUkcQ" id="twitter-update-status-impl-1.2.1">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_JXOzAKo5Eey4q8AylnUkcQ" key="twitter-update-status-impl -- 1.2.1" value="bonita-connector-twitter-1.2.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_JXOzAao5Eey4q8AylnUkcQ" key="twitter-update-status-impl -- 1.2.1" value="twitter4j-core-4.0.7.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_JXSdYKo5Eey4q8AylnUkcQ" id="salesforce-createsobject-impl-1.1.3">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_JXUSkKo5Eey4q8AylnUkcQ" key="salesforce-createsobject-impl -- 1.1.3" value="bonita-connector-salesforce-1.1.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_JXU5oKo5Eey4q8AylnUkcQ" key="salesforce-createsobject-impl -- 1.1.3" value="force-partner-api-24.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_JXU5oao5Eey4q8AylnUkcQ" key="salesforce-createsobject-impl -- 1.1.3" value="force-wsc-24.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_JXU5oqo5Eey4q8AylnUkcQ" key="salesforce-createsobject-impl -- 1.1.3" value="gson-1.7.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_JXU5o6o5Eey4q8AylnUkcQ" key="salesforce-createsobject-impl -- 1.1.3" value="js-1.7R2.jar" type="CONNECTOR"/>
+          </children>
+        </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_1gIscqkqEey02rEca7xK5w" id="GROOVY_SCRIPT"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_1gPaIKkqEey02rEca7xK5w" id="ACTOR_FILTER"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_1gPaIakqEey02rEca7xK5w" id="OTHER"/>
