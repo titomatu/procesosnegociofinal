@@ -22,7 +22,26 @@
           </correlation>
           <targetProcessExpression xmi:type="expression:Expression" xmi:id="_sW8zEahpEey296gXUrZA2g" name="SOLICITUD CREDITO" content="SOLICITUD CREDITO"/>
           <targetElementExpression xmi:type="expression:Expression" xmi:id="_sW8zEKhpEey296gXUrZA2g" name="Recibe Datos Solicitud" content="Recibe Datos Solicitud"/>
-          <messageContent xmi:type="expression:TableExpression" xmi:id="_PRJbpafnEey3UrpwBv7rIg"/>
+          <messageContent xmi:type="expression:TableExpression" xmi:id="_PRJbpafnEey3UrpwBv7rIg">
+            <expressions xmi:type="expression:ListExpression" xmi:id="_IZZTgKrCEeyrt_x-ACIiEA">
+              <expressions xmi:type="expression:Expression" xmi:id="_IZZTgarCEeyrt_x-ACIiEA" name="creditoPersistenceId" content="creditoPersistenceId" returnTypeFixed="true"/>
+              <expressions xmi:type="expression:Expression" xmi:id="_IZZTgqrCEeyrt_x-ACIiEA" name="creditoPersistenceId()" content="bdCredito.persistenceId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Z1R7kKrCEeyrt_x-ACIiEA" name="bdCredito" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDCredito"/>
+              </expressions>
+            </expressions>
+            <expressions xmi:type="expression:ListExpression" xmi:id="_IZcW0KrCEeyrt_x-ACIiEA">
+              <expressions xmi:type="expression:Expression" xmi:id="_IZcW0arCEeyrt_x-ACIiEA" name="deudorPersistenceId" content="deudorPersistenceId" returnTypeFixed="true"/>
+              <expressions xmi:type="expression:Expression" xmi:id="_IZcW0qrCEeyrt_x-ACIiEA" name="deudorPersistenceId()" content="bdDeudor.persistenceId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Z1SioKrCEeyrt_x-ACIiEA" name="bdDeudor" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+              </expressions>
+            </expressions>
+            <expressions xmi:type="expression:ListExpression" xmi:id="_IZc94KrCEeyrt_x-ACIiEA">
+              <expressions xmi:type="expression:Expression" xmi:id="_IZc94arCEeyrt_x-ACIiEA" name="codeudorPersistenceId" content="codeudorPersistenceId" returnTypeFixed="true"/>
+              <expressions xmi:type="expression:Expression" xmi:id="_IZc94qrCEeyrt_x-ACIiEA" name="codeudorPersistenceId()" content="bdCodeudor.persistenceId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Z1SioarCEeyrt_x-ACIiEA" name="bdCodeudor" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDCodeudor"/>
+              </expressions>
+            </expressions>
+          </messageContent>
         </events>
       </elements>
       <elements xmi:type="process:Task" xmi:id="_YOQB8KmGEeyv491rbMHhOA" name="Datos Codeudor" outgoing="_VvcdMKmGEeyv491rbMHhOA" incoming="_br3lEKmWEeyv491rbMHhOA" actor="_J_4m0KhqEey296gXUrZA2g">
@@ -1258,6 +1277,27 @@
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_zeDW4afgEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_zeDW4KfgEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_zeDW4qfgEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
+        <messageContent xmi:type="expression:Operation" xmi:id="_Kio38KrCEeyrt_x-ACIiEA">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_Kio38arCEeyrt_x-ACIiEA" name="codeudorPersistenceId" content="codeudorPersistenceId" type="TYPE_VARIABLE" returnType="java.lang.Long">
+            <referencedElements xmi:type="process:Data" xmi:id="_b7MfMKrCEeyrt_x-ACIiEA" name="codeudorPersistenceId" dataType="_5Ez28qfTEeyTON15L57GOg"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_Kio38qrCEeyrt_x-ACIiEA" name="creditoPersistenceId" content="creditoPersistenceId" type="MESSAGE_ID_TYPE"/>
+          <operator xmi:type="expression:Operator" xmi:id="_Kio386rCEeyrt_x-ACIiEA" type="ASSIGNMENT"/>
+        </messageContent>
+        <messageContent xmi:type="expression:Operation" xmi:id="_KiqGEKrCEeyrt_x-ACIiEA">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_KiqGEarCEeyrt_x-ACIiEA" name="deudorPersistenceId" content="deudorPersistenceId" type="TYPE_VARIABLE" returnType="java.lang.Long">
+            <referencedElements xmi:type="process:Data" xmi:id="_PX5WsKrCEeyrt_x-ACIiEA" name="deudorPersistenceId" dataType="_5Ez28qfTEeyTON15L57GOg"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_KiqGEqrCEeyrt_x-ACIiEA" name="deudorPersistenceId" content="deudorPersistenceId" type="MESSAGE_ID_TYPE"/>
+          <operator xmi:type="expression:Operator" xmi:id="_KiqGE6rCEeyrt_x-ACIiEA" type="ASSIGNMENT"/>
+        </messageContent>
+        <messageContent xmi:type="expression:Operation" xmi:id="_KiqtIKrCEeyrt_x-ACIiEA">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_KiqtIarCEeyrt_x-ACIiEA" name="codeudorPersistenceId" content="codeudorPersistenceId" type="TYPE_VARIABLE" returnType="java.lang.Long">
+            <referencedElements xmi:type="process:Data" xmi:id="_RTlnUKrCEeyrt_x-ACIiEA" name="codeudorPersistenceId" dataType="_5Ez28qfTEeyTON15L57GOg"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_KiqtIqrCEeyrt_x-ACIiEA" name="codeudorPersistenceId" content="codeudorPersistenceId" type="MESSAGE_ID_TYPE"/>
+          <operator xmi:type="expression:Operator" xmi:id="_KiqtI6rCEeyrt_x-ACIiEA" type="ASSIGNMENT"/>
+        </messageContent>
       </elements>
       <elements xmi:type="process:EndEvent" xmi:id="_DT-b0KfjEey3UrpwBv7rIg" name="Fin2" incoming="_DUA4EKfjEey3UrpwBv7rIg">
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_DT-b0qfjEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
@@ -1269,6 +1309,15 @@
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_H2Ij8afZEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_H2Ij86fZEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
       </elements>
+      <data xmi:type="process:Data" xmi:id="_M5qZsKrCEeyrt_x-ACIiEA" name="creditoPersistenceId" dataType="_5Ez28qfTEeyTON15L57GOg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_M5rAwKrCEeyrt_x-ACIiEA" content="" returnType="java.lang.Long"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_PWlIEKrCEeyrt_x-ACIiEA" name="deudorPersistenceId" dataType="_5Ez28qfTEeyTON15L57GOg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_PWlIEarCEeyrt_x-ACIiEA" content="" returnType="java.lang.Long"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_RSjskKrCEeyrt_x-ACIiEA" name="codeudorPersistenceId" dataType="_5Ez28qfTEeyTON15L57GOg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_RSjskarCEeyrt_x-ACIiEA" content="" returnType="java.lang.Long"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_5OILEKfTEeyTON15L57GOg">
         <targetForm xmi:type="expression:Expression" xmi:id="_uj4bYKovEeyrt_x-ACIiEA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
