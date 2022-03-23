@@ -9,7 +9,6 @@
                 <field type="STRING" length="255" name="segundo_nombre" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="apellido" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="segundo_apellido" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="ingresos_mmensuales" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="actividad_economicaCd" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="fecha_nacimientoCd" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="ciudad_residenciaCd" nullable="true" collection="false"/>
@@ -27,10 +26,8 @@
                 <field type="STRING" length="255" name="profesionCd" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="correoCd" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="autoriza_centralesCd" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="id_cod" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="columna1" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="columna2" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="columna3" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="cod_convenioCd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nro_doctodeudor" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -42,6 +39,11 @@
                 <field type="STRING" length="255" name="codconvenio" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="valorsolicitado" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="plazo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_doctodeudor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nro_doctodeudor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_doctocodeudor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nro_doctocodeudor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="fechasolicitud" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -72,6 +74,7 @@
                 <field type="STRING" length="255" name="profesion" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="correo" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="autoriza_centrales" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="cod_conveniodeudor" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

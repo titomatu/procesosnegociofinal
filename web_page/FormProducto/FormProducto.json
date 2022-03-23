@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "FormProducto",
   "name" : "FormProducto",
-  "lastUpdate" : 1647920559701,
+  "lastUpdate" : 1648015466313,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "c8e1f3a9-e083-4229-9ff9-df0b633462ad",
+        "reference" : "62de2b14-ef22-4dca-b8ee-3b9aa0226ee8",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "4c389fe3-7b11-413b-83e1-dcc804420ab5",
+              "reference" : "fa13981d-47f1-41bf-abdd-8d2bc5a80786",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "7ddad20d-70b2-4472-809d-5f499bbeda4d",
+              "reference" : "6827ab92-7282-4500-8119-74c571388ac8",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "3e9e5523-cacc-49ea-a71b-0d3fe1213001",
+        "reference" : "b8bb84ec-c382-47c8-931b-cc2e5c9304c2",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "3fb9598c-6890-4865-ba3a-8c045146e2fa",
+          "reference" : "2f85fb69-3595-4648-bce6-a25141b9bb2d",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -151,7 +151,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Bd Credito"
+                    "value" : "Datos Producto"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "c6a8bc06-cfa3-4956-843c-5855471d8cf9",
+                "reference" : "013ca6ac-ed56-4094-a744-0e5d5512c9ff",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -194,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "db64712a-43c2-49c9-909f-49e79abbf720",
+                "reference" : "62024e5a-53c9-4681-8116-baaec028d85c",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -222,7 +222,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -260,7 +260,7 @@
                           "value" : "bdCredito.tipocredito"
                         }
                       },
-                      "reference" : "dfefcc3a-216c-479c-8831-6f542c10c3dc",
+                      "reference" : "92bfa299-50e1-4082-a9ac-98c481bb8acc",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
                     },
@@ -299,7 +299,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Código Convenio"
+                          "value" : "Código convenio"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -318,15 +318,15 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "minLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 0
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 10
                         },
                         "min" : {
                           "type" : "constant"
@@ -339,7 +339,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "fd20e7e7-9419-4801-9ae7-718c2aa29606",
+                      "reference" : "a062c7b9-f123-4c32-93f5-2abdcc2b2a48",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -400,15 +400,15 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "minLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 0
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 15
                         },
                         "min" : {
                           "type" : "constant"
@@ -421,7 +421,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "f09af72e-a42a-42b6-b3d9-2b9ec7924ed9",
+                      "reference" : "58838e1f-58d4-4c4d-9a6f-30f164510498",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -449,7 +449,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -491,9 +491,381 @@
                           "value" : "bdCredito.plazo"
                         }
                       },
-                      "reference" : "91a0f333-831c-4363-ba8b-986f43872d85",
+                      "reference" : "ddf7447b-453b-48a1-955d-b846da3d7efe",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Datos Solicitante"
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 2"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "1fc3d2ae-6560-43bc-a14f-fd58c23bc8fc",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Tipo Documento"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "availableValues" : {
+                          "type" : "constant",
+                          "value" : [
+                            "CC",
+                            "NI",
+                            "CE",
+                            "TI"
+                          ]
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdCredito.tipo_doctodeudor"
+                        }
+                      },
+                      "reference" : "870c6913-84af-41a2-8edf-ebcab2538bfa",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Numero Documento"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "number"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdCredito.nro_doctodeudor"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "831db8c3-df96-4a7d-8a90-046591463d12",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Datos Codeudor"
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 2"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "9fe3bcfd-619c-4718-838b-3459b96b6bdb",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Tipo Documento"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "availableValues" : {
+                          "type" : "constant",
+                          "value" : [
+                            "CC",
+                            "NI",
+                            "CE",
+                            "TI"
+                          ]
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdCredito.tipo_doctocodeudor"
+                        }
+                      },
+                      "reference" : "e67a09ea-62f8-4468-bda5-009b87ec3d38",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Numero Documento"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "number"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdCredito.nro_doctocodeudor"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "a57c0b8e-65c0-43db-9839-6bb30c194a02",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
                     }
                   ]
                 ]
@@ -570,7 +942,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "26f53bb5-4cc1-4dbb-bec9-e9b585eb4090",
+                "reference" : "bcfd4b95-decb-4f2b-b528-40b5f81730f1",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -622,7 +994,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "239747ec-8cb4-4753-83f1-0aac1d1a0f2f",
+                "reference" : "cfdf4e35-8d14-4140-826d-d8ed50d7585a",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -635,14 +1007,14 @@
   ],
   "assets" : [
     {
-      "id" : "c36c64a3-f247-45c2-b687-0d55f2b2fa42",
+      "id" : "9d981f65-a789-4a77-bc6e-3f4df90cea8d",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "c06b9e28-bd10-4407-bee6-90a4f3e327c3",
+      "id" : "1a5c6c22-40c8-439d-8729-10a35bac7beb",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -690,7 +1062,11 @@
         "\t\t\ttipocredito: $data.bdCredito.tipocredito !== undefined ? $data.bdCredito.tipocredito : null,",
         "\t\t\tcodconvenio: $data.bdCredito.codconvenio !== undefined ? $data.bdCredito.codconvenio : null,",
         "\t\t\tvalorsolicitado: $data.bdCredito.valorsolicitado !== undefined ? $data.bdCredito.valorsolicitado : null,",
-        "\t\t\tplazo: $data.bdCredito.plazo !== undefined ? $data.bdCredito.plazo : null",
+        "\t\t\tplazo: $data.bdCredito.plazo !== undefined ? $data.bdCredito.plazo : null,",
+        "\t\t\ttipo_doctodeudor: $data.bdCredito.tipo_doctodeudor !== undefined ? $data.bdCredito.tipo_doctodeudor : null,",
+        "\t\t\tnro_doctodeudor: $data.bdCredito.nro_doctodeudor !== undefined ? $data.bdCredito.nro_doctodeudor : null,",
+        "\t\t\ttipo_doctocodeudor: $data.bdCredito.tipo_doctocodeudor !== undefined ? $data.bdCredito.tipo_doctocodeudor : null,",
+        "\t\t\tnro_doctocodeudor: $data.bdCredito.nro_doctocodeudor !== undefined ? $data.bdCredito.nro_doctocodeudor : null",
         "\t\t}",
         "\t}",
         "}"
@@ -713,7 +1089,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "0e1147d7-3290-4ccb-9b42-156aa52e9075",
+  "uuid" : "f778446b-9a2a-46b5-9afb-892dc198b0fd",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
