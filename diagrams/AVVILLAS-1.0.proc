@@ -2365,7 +2365,7 @@
         <iteratorExpression xmi:type="expression:Expression" xmi:id="_QcIQx6fWEey3UrpwBv7rIg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
         <completionCondition xmi:type="expression:Expression" xmi:id="_QcIQxqfWEey3UrpwBv7rIg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <formMapping xmi:type="process:FormMapping" xmi:id="_zwQG0aslEeyLs_-MZ75jig">
-          <targetForm xmi:type="expression:Expression" xmi:id="_1fvugKslEeyLs_-MZ75jig" name="BORRAR" content="84df7257-a9fa-48ad-b85f-ab0841e51316" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          <targetForm xmi:type="expression:Expression" xmi:id="_Lnz_kKsrEeym2f43hBuA2A" name="newForm" content="a77fcd7c-b23c-4e39-a60b-e566003e0051" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_zwQG0KslEeyLs_-MZ75jig">
           <inputs xmi:type="process:ContractInput" xmi:id="_1Da-4KslEeyLs_-MZ75jig" name="bdDeudorSolicitudInput" type="COMPLEX" dataReference="bdDeudorSolicitud" createMode="false">
