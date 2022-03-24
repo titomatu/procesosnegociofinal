@@ -1334,8 +1334,8 @@
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_zeDW4KfgEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_zeDW4qfgEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
         <messageContent xmi:type="expression:Operation" xmi:id="_Kio38KrCEeyrt_x-ACIiEA">
-          <leftOperand xmi:type="expression:Expression" xmi:id="_Kio38arCEeyrt_x-ACIiEA" name="codeudorPersistenceId" content="codeudorPersistenceId" type="TYPE_VARIABLE" returnType="java.lang.Long">
-            <referencedElements xmi:type="process:Data" xmi:id="_b7MfMKrCEeyrt_x-ACIiEA" name="codeudorPersistenceId" dataType="_5Ez28qfTEeyTON15L57GOg"/>
+          <leftOperand xmi:type="expression:Expression" xmi:id="_Kio38arCEeyrt_x-ACIiEA" name="creditoPersistenceId" content="creditoPersistenceId" type="TYPE_VARIABLE" returnType="java.lang.Long">
+            <referencedElements xmi:type="process:Data" xmi:id="_ExxLQKsfEeye86wBoaNHzA" name="creditoPersistenceId" dataType="_5Ez28qfTEeyTON15L57GOg"/>
           </leftOperand>
           <rightOperand xmi:type="expression:Expression" xmi:id="_Kio38qrCEeyrt_x-ACIiEA" name="creditoPersistenceId" content="creditoPersistenceId" type="MESSAGE_ID_TYPE"/>
           <operator xmi:type="expression:Operator" xmi:id="_Kio386rCEeyrt_x-ACIiEA" type="ASSIGNMENT"/>
