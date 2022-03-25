@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "FormCodeudor",
   "name" : "FormCodeudor",
-  "lastUpdate" : 1648014892592,
+  "lastUpdate" : 1648215048545,
   "rows" : [
     [
       {
@@ -1818,7 +1818,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -1957,7 +1957,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Enviar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1999,6 +1999,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "782d25b8-b656-4c43-b509-a93fa1b69edf",
