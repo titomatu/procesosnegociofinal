@@ -1496,7 +1496,7 @@
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_3RygQKrrEeyHzoKew_7V8g" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_3RygQqrrEeyHzoKew_7V8g" name="" content="" returnTypeFixed="true"/>
       </elements>
-      <elements xmi:type="process:ServiceTask" xmi:id="_qnQUYKwJEeyDCaUMkgvQ8w" name="Envio Notificacion" incoming="_qnQUbKwJEeyDCaUMkgvQ8w _syy-4KwJEeyDCaUMkgvQ8w _uyHyUKwJEeyDCaUMkgvQ8w _w2gE4KwJEeyDCaUMkgvQ8w _ypTfQKwJEeyDCaUMkgvQ8w _0Bmu8KwJEeyDCaUMkgvQ8w">
+      <elements xmi:type="process:ServiceTask" xmi:id="_qnQUYKwJEeyDCaUMkgvQ8w" name="Envio Notificacion Error" incoming="_qnQUbKwJEeyDCaUMkgvQ8w _syy-4KwJEeyDCaUMkgvQ8w _uyHyUKwJEeyDCaUMkgvQ8w _w2gE4KwJEeyDCaUMkgvQ8w _ypTfQKwJEeyDCaUMkgvQ8w _0Bmu8KwJEeyDCaUMkgvQ8w">
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_qnQUYqwJEeyDCaUMkgvQ8w" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_qnQUYawJEeyDCaUMkgvQ8w" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_qnQUY6wJEeyDCaUMkgvQ8w" name="" content="" returnTypeFixed="true"/>
