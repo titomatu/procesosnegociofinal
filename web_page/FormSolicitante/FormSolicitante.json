@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "FormSolicitante",
   "name" : "FormSolicitante",
-  "lastUpdate" : 1648014030442,
+  "lastUpdate" : 1648215011997,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "48de1a72-5daf-435d-b7ef-c3b2dc6d89f0",
+        "reference" : "f50639d0-8d1c-45ea-94a9-3a7d77720881",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "0ca7c275-1039-49ef-be2d-eeb7615f8166",
+              "reference" : "befd4e13-92e4-4039-a5e7-54c7e8924a14",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "961737d2-8e91-4bf5-98e8-3530492c5d60",
+              "reference" : "d92b66c9-e5ac-4cf9-a7c1-f7bb81b30ac6",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "a9d82dee-5990-4100-8dd0-dd04d4747095",
+        "reference" : "6ca4a4dc-c384-4cb8-8115-5cfddbb830dd",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "cd392e5b-2e46-4f12-835d-1a94c83c764b",
+          "reference" : "246ddabf-a64e-4750-8060-d5552f06d5e7",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "fba23099-001e-4825-b14b-10aae946efc1",
+                "reference" : "cd022005-3ad2-467c-b9f4-694e32ffb3e4",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -194,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "50c448d5-1e72-49b7-b0dc-6fdee098714b",
+                "reference" : "f81ea17c-fed3-4f2c-8ce1-aedb31adb9e6",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -205,7 +205,7 @@
                         "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 3
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -222,7 +222,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -263,7 +263,7 @@
                           "value" : "bdDeudor.tipo_documento"
                         }
                       },
-                      "reference" : "d57cb791-b100-4467-b272-b3aa732218fa",
+                      "reference" : "03067703-3e06-4e90-8eac-fa0a84baa8a7",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
                     },
@@ -273,7 +273,7 @@
                         "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 3
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -302,14 +302,14 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Numero Documento"
+                          "value" : "Numero_documento"
                         },
                         "placeholder" : {
                           "type" : "constant"
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "number"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -321,15 +321,15 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "minLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 0
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 12
                         },
                         "min" : {
                           "type" : "constant"
@@ -342,7 +342,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "31fe19cf-6aaa-4e5b-b3af-198cd507d5c2",
+                      "reference" : "b661d65b-292f-4fca-a9f9-1d4124e99934",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -424,7 +424,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "a6758f27-73b9-4d8c-990d-23d53ae83d59",
+                      "reference" : "290d4a51-f0f4-4421-a909-a764f4cb689e",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -487,11 +487,11 @@
                         },
                         "minLength" : {
                           "type" : "constant",
-                          "value" : 0
+                          "value" : ""
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : 25
+                          "value" : ""
                         },
                         "min" : {
                           "type" : "constant"
@@ -504,7 +504,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "518ea586-0eb6-4f23-bcbd-b32fdf982336",
+                      "reference" : "d52f51f5-34c0-4cb6-870f-f6658170e227",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -569,11 +569,11 @@
                         },
                         "minLength" : {
                           "type" : "constant",
-                          "value" : 0
+                          "value" : ""
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : 25
+                          "value" : ""
                         },
                         "min" : {
                           "type" : "constant"
@@ -586,7 +586,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "b81f0256-4e06-4771-886a-ee4b281c6c19",
+                      "reference" : "0521fa6b-5615-4e79-9f71-3533ec0e26f7",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -645,15 +645,15 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "minLength" : {
                           "type" : "constant",
-                          "value" : 0
+                          "value" : ""
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : 25
+                          "value" : ""
                         },
                         "min" : {
                           "type" : "constant"
@@ -666,7 +666,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "95703fa3-b233-4204-9862-83283431333c",
+                      "reference" : "69b3b927-2eda-4594-9e80-66a90459de7c",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -738,7 +738,7 @@
                           "value" : "bdDeudor.actividad_economica"
                         }
                       },
-                      "reference" : "d83ff212-162c-48ab-9d31-41ee2bd5ade2",
+                      "reference" : "fa85d46a-d0eb-4088-9a72-361d3ae355bd",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
                     },
@@ -801,11 +801,11 @@
                         },
                         "minLength" : {
                           "type" : "constant",
-                          "value" : 10
+                          "value" : ""
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : 10
+                          "value" : ""
                         },
                         "min" : {
                           "type" : "constant"
@@ -818,7 +818,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "dcbc515c-ec90-4690-a754-eea3f75161ac",
+                      "reference" : "36e870c2-16f6-431e-87b4-aa13fd668102",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -883,11 +883,11 @@
                         },
                         "minLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 0
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 30
                         },
                         "min" : {
                           "type" : "constant"
@@ -900,7 +900,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "df4d3e47-a76a-401d-9b75-01c035c7593e",
+                      "reference" : "bfb7bbe0-8ef5-4b52-9ad5-d5ed1a6cdbc7",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -969,7 +969,7 @@
                           "value" : "bdDeudor.tipo_residencia"
                         }
                       },
-                      "reference" : "4948d569-4c15-4e59-91b8-af40c6a4d97c",
+                      "reference" : "f1daebb2-b892-4ab2-9458-298d3c9b7e94",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
                     }
@@ -1038,7 +1038,7 @@
                           "value" : "bdDeudor.genero"
                         }
                       },
-                      "reference" : "8a0f1b7f-daca-4f7c-a53d-181d67a3e071",
+                      "reference" : "5880f75c-e46b-4e45-9bfb-064117b837ae",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
                     },
@@ -1105,7 +1105,7 @@
                           "value" : "bdDeudor.tipo_contrato"
                         }
                       },
-                      "reference" : "ed8466af-36f9-41be-a0a3-78d10711deb0",
+                      "reference" : "8dce8cec-4f1c-404f-9071-e6ba43c37d38",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
                     }
@@ -1117,7 +1117,7 @@
                         "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 4
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -1177,7 +1177,7 @@
                           "value" : "bdDeudor.nivel_estudio"
                         }
                       },
-                      "reference" : "beffcef3-7d1f-4652-b8ad-3c6170ff4d38",
+                      "reference" : "af8fb08a-9282-40b1-a608-e3b10b033168",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
                     },
@@ -1187,7 +1187,7 @@
                         "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 4
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -1245,7 +1245,7 @@
                           "value" : "bdDeudor.tipo_inmueble"
                         }
                       },
-                      "reference" : "9ea1dff6-8b70-4954-90c7-c0556c405890",
+                      "reference" : "f3d08161-963c-4b7f-b109-cde2ed970646",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
                     }
@@ -1326,7 +1326,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "d2a49df2-7acc-4940-aa5f-2896751cbbd3",
+                      "reference" : "e30f95dd-7f90-4b0a-babc-5472ef86f6f3",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -1373,7 +1373,7 @@
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "number"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1393,7 +1393,7 @@
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : 10
                         },
                         "min" : {
                           "type" : "constant"
@@ -1406,7 +1406,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "f22d5281-f7ba-4a29-820a-c30b85fd0ed6",
+                      "reference" : "9b217bcb-66fb-424f-b195-1b13e0a18152",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -1419,7 +1419,87 @@
                         "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 4
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Profesion"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudor.profesion"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : 30
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "b30370d4-de77-40fa-9090-23c9479731a6",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -1478,89 +1558,9 @@
                           "value" : "bdDeudor.estado_civil"
                         }
                       },
-                      "reference" : "85c4dd7b-fcae-4ed7-8f24-a344f8cbf7d4",
+                      "reference" : "c5628995-4115-4ef4-a420-0d69611fea3c",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 4
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Profesión"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "bdDeudor.profesion"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 30
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "ee51bf26-c06c-4dc7-9e2f-eaaa2f59b917",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
                     }
                   ],
                   [
@@ -1639,7 +1639,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "0efd5dde-0528-4d4f-8eca-515fae361d05",
+                      "reference" : "c36281c1-c403-4a61-b794-ab0dd3ee3fb1",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -1678,12 +1678,92 @@
                           "value" : "bdDeudor.autoriza_centrales"
                         }
                       },
-                      "reference" : "a7bec596-189f-46de-bea4-a67b07339ec4",
+                      "reference" : "a942fd24-2e0c-469b-8343-f938195e64b6",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox"
                     }
                   ],
                   [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Dirección"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudor.direccion"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : 15
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "d956e3fe-80a2-4f67-b29b-a87955bb93e5",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    },
                     {
                       "type" : "component",
                       "dimension" : {
@@ -1759,11 +1839,13 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "9670e0bc-e67d-4d51-8ec5-967e4263fa23",
+                      "reference" : "3ca423b6-0e23-4e69-a8c6-621d49e996cb",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
-                    },
+                    }
+                  ],
+                  [
                     {
                       "type" : "component",
                       "dimension" : {
@@ -1818,7 +1900,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -1839,20 +1921,18 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "e993d58f-c040-45de-8a09-423d55e50665",
+                      "reference" : "f8eec977-1438-48b3-94db-5829002f25ea",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
-                    }
-                  ],
-                  [
+                    },
                     {
                       "type" : "component",
                       "dimension" : {
                         "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -1904,11 +1984,11 @@
                         },
                         "minLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 0
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 15
                         },
                         "min" : {
                           "type" : "constant"
@@ -1921,7 +2001,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "f1ba7a56-1afb-4832-8edf-381b875c4142",
+                      "reference" : "f19ecfe4-328a-4f74-abd0-24bfbca9ba26",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -1957,7 +2037,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Enviar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1999,9 +2079,32 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
-                "reference" : "3c69a4ec-c1d2-4e5e-b1b5-e8d09ac46d86",
+                "reference" : "0f6dffe3-e06f-4c50-98a6-894c342b81a0",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -2053,7 +2156,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "77e79ed5-5cf7-48ab-b6e0-3a24d8adafa1",
+                "reference" : "53fcea46-9bd0-425c-85bf-1beecc744171",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -2066,14 +2169,14 @@
   ],
   "assets" : [
     {
-      "id" : "9e1776d6-4d55-4937-b5fc-4ea0bbcea397",
+      "id" : "bb2cd860-87d5-442c-9ded-c2c62f1a6da6",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "6b058cb3-e052-4ed7-b7e8-468c0a0c4612",
+      "id" : "c47737ef-d196-4e03-a982-0bc27db18cdb",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -2140,7 +2243,9 @@
         "\t\t\testado_civil: $data.bdDeudor.estado_civil !== undefined ? $data.bdDeudor.estado_civil : null,",
         "\t\t\tprofesion: $data.bdDeudor.profesion !== undefined ? $data.bdDeudor.profesion : null,",
         "\t\t\tcorreo: $data.bdDeudor.correo !== undefined ? $data.bdDeudor.correo : null,",
-        "\t\t\tautoriza_centrales: $data.bdDeudor.autoriza_centrales !== undefined ? $data.bdDeudor.autoriza_centrales : null",
+        "\t\t\tautoriza_centrales: $data.bdDeudor.autoriza_centrales !== undefined ? $data.bdDeudor.autoriza_centrales : null,",
+        "\t\t\tdireccion: $data.bdDeudor.direccion !== undefined ? $data.bdDeudor.direccion : null,",
+        "\t\t\tcod_conveniodeudor: $data.bdDeudor.cod_conveniodeudor !== undefined ? $data.bdDeudor.cod_conveniodeudor : null",
         "\t\t}",
         "\t}",
         "}"
@@ -2163,7 +2268,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "6c12bc67-73fa-4c7f-aea4-0c5e9bfa5edc",
+  "uuid" : "740b7106-0ad4-4e0d-a558-d4ed89fd2b4c",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
