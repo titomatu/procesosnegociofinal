@@ -114,6 +114,11 @@
       <artifactId>bonita-connector-twitter</artifactId>
       <version>1.2.1</version>
     </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.connectors</groupId>
+      <artifactId>bonita-connector-rest</artifactId>
+      <version>1.2.1</version>
+    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
