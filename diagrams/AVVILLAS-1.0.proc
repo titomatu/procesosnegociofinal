@@ -956,7 +956,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_82IzsappEey8YczLm5HXCA" content="" returnType="java.lang.Long"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_5M6DD6fTEeyTON15L57GOg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_GWK48KyuEeymy9-9ASBsMw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_SdlCwKzGEey69Mzyx5xfrw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_5M6DEafTEeyTON15L57GOg">
         <targetForm xmi:type="expression:Expression" xmi:id="_5M6DEqfTEeyTON15L57GOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -2378,7 +2378,7 @@
         <iteratorExpression xmi:type="expression:Expression" xmi:id="_mppNF6fcEey3UrpwBv7rIg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
         <completionCondition xmi:type="expression:Expression" xmi:id="_mppNFqfcEey3UrpwBv7rIg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <formMapping xmi:type="process:FormMapping" xmi:id="_IEj-ZavzEeymy9-9ASBsMw">
-          <targetForm xmi:type="expression:Expression" xmi:id="_dBwxEKvzEeymy9-9ASBsMw" name="newFormFinal" content="0f05d29c-351f-4983-a292-8fc035baee27" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          <targetForm xmi:type="expression:Expression" xmi:id="_kngxsKzIEey69Mzyx5xfrw" name="formulariofinal" content="806d0c9e-ae61-4a38-9f35-dc37f6dbe83d" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_IEj-ZKvzEeymy9-9ASBsMw">
           <inputs xmi:type="process:ContractInput" xmi:id="_MgVmIKvzEeymy9-9ASBsMw" name="bdDeudorSolicitudInput" type="COMPLEX" dataReference="bdDeudorSolicitud" createMode="false">
@@ -3704,7 +3704,7 @@
         <iteratorExpression xmi:type="expression:Expression" xmi:id="_8dBhOKfZEey3UrpwBv7rIg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
         <completionCondition xmi:type="expression:Expression" xmi:id="_8dBhN6fZEey3UrpwBv7rIg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </elements>
-      <elements xmi:type="process:ServiceTask" xmi:id="_olOa4Ky8Eey69Mzyx5xfrw" name="WRBA_CreditoConsumo_validarInformacionInterna" outgoing="_S4E1IKfeEey3UrpwBv7rIg" incoming="_Q1erQKfeEey3UrpwBv7rIg">
+      <elements xmi:type="process:Task" xmi:id="_JAoEUKy_Eey69Mzyx5xfrw" name="WRBA_CreditoConsumo_validarInformacionInterna" outgoing="_S4E1IKfeEey3UrpwBv7rIg" incoming="_Q1erQKfeEey3UrpwBv7rIg" actor="_uuux4KseEeyois0xIC3t0w">
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_Q1aZ0qfeEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_Q1aZ0afeEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_Q1aZ06feEey3UrpwBv7rIg" name="" content="" returnTypeFixed="true"/>
@@ -3985,11 +3985,307 @@
             <inputTypes>java.lang.String</inputTypes>
           </operator>
         </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y6oKy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y6oay_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y6oqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y6o6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.nombre1" content="bdDeudorSolicitudInput?.nombre1" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y6pKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y6pay_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setNombre1">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y6pqy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y6p6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y6qKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y6qay_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.nombre2" content="bdDeudorSolicitudInput?.nombre2" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y6qqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y6q6y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setNombre2">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y6rKy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y6ray_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y6rqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y6r6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.apellido1" content="bdDeudorSolicitudInput?.apellido1" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y6sKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y6say_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setApellido1">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y6sqy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y6s6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y6tKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y6tay_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.apellido2" content="bdDeudorSolicitudInput?.apellido2" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y6tqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y6t6y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setApellido2">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y6uKy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y6uay_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y6uqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y6u6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.tipo_documento" content="bdDeudorSolicitudInput?.tipo_documento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y6vKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y6vay_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setTipo_documento">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y6vqy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y6v6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y6wKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y6way_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.numero_documento" content="bdDeudorSolicitudInput?.numero_documento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y6wqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y6w6y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setNumero_documento">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y6xKy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y6xay_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y6xqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y6x6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.actividad_economica" content="bdDeudorSolicitudInput?.actividad_economica" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y6yKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y6yay_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setActividad_economica">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y6yqy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y6y6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y6zKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y6zay_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.fecha_nacimiento" content="bdDeudorSolicitudInput?.fecha_nacimiento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y6zqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y6z6y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setFecha_nacimiento">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y60Ky_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y60ay_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y60qy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y606y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.ciudad_residencia" content="bdDeudorSolicitudInput?.ciudad_residencia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y61Ky_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y61ay_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setCiudad_residencia">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y61qy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y616y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y62Ky_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y62ay_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.valor_ingresos" content="bdDeudorSolicitudInput?.valor_ingresos" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y62qy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y626y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setValor_ingresos">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y63Ky_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y63ay_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y63qy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y636y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.valor_egresos" content="bdDeudorSolicitudInput?.valor_egresos" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y64Ky_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y64ay_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setValor_egresos">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y64qy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y646y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y65Ky_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y65ay_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.tipo_residencia" content="bdDeudorSolicitudInput?.tipo_residencia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y65qy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y656y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setTipo_residencia">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y66Ky_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y66ay_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y66qy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y666y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.genero" content="bdDeudorSolicitudInput?.genero" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y67Ky_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y67ay_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setGenero">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y67qy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y676y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y68Ky_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y68ay_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.tipo_contrato" content="bdDeudorSolicitudInput?.tipo_contrato" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y68qy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y686y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setTipo_contrato">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y69Ky_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y69ay_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y69qy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y696y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.nivel_estudio" content="bdDeudorSolicitudInput?.nivel_estudio" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y6-Ky_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y6-ay_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setNivel_estudio">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y6-qy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y6-6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y6_Ky_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y6_ay_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.tipo_inmueble" content="bdDeudorSolicitudInput?.tipo_inmueble" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y6_qy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y6_6y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setTipo_inmueble">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y7AKy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y7Aay_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y7Aqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y7A6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.valor_arriendo" content="bdDeudorSolicitudInput?.valor_arriendo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y7BKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y7Bay_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setValor_arriendo">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y7Bqy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y7B6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y7CKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y7Cay_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.celular" content="bdDeudorSolicitudInput?.celular" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y7Cqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y7C6y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setCelular">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y7DKy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y7Day_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y7Dqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y7D6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.telefono" content="bdDeudorSolicitudInput?.telefono" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y7EKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y7Eay_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setTelefono">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y7Eqy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y7E6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y7FKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y7Fay_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.estado_civil" content="bdDeudorSolicitudInput?.estado_civil" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y7Fqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y7F6y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setEstado_civil">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y7GKy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y7Gay_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y7Gqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y7G6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.profesion" content="bdDeudorSolicitudInput?.profesion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y7HKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y7Hay_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setProfesion">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y7Hqy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y7H6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y7IKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y7Iay_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.correo" content="bdDeudorSolicitudInput?.correo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y7Iqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y7I6y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setCorreo">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y7JKy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y7Jay_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y7Jqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y7J6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.autoriza_centrales" content="bdDeudorSolicitudInput?.autoriza_centrales" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y7KKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y7Kay_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setAutoriza_centrales">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_L1y7Kqy_Eey69Mzyx5xfrw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_L1y7K6y_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" content="bdDeudorSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDDeudor">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_L1y7LKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_L1y7Lay_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput.cod_conveniodeudor" content="bdDeudorSolicitudInput?.cod_conveniodeudor" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_L1y7Lqy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_L1y7L6y_Eey69Mzyx5xfrw" type="JAVA_METHOD" expression="setCod_conveniodeudor">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
         <loopCondition xmi:type="expression:Expression" xmi:id="_Q1bA4KfeEey3UrpwBv7rIg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <loopMaximum xmi:type="expression:Expression" xmi:id="_Q1bA4afeEey3UrpwBv7rIg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <cardinalityExpression xmi:type="expression:Expression" xmi:id="_Q1bA4qfeEey3UrpwBv7rIg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <iteratorExpression xmi:type="expression:Expression" xmi:id="_Q1bA5KfeEey3UrpwBv7rIg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
         <completionCondition xmi:type="expression:Expression" xmi:id="_Q1bA46feEey3UrpwBv7rIg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <formMapping xmi:type="process:FormMapping" xmi:id="_JAqgmay_Eey69Mzyx5xfrw">
+          <targetForm xmi:type="expression:Expression" xmi:id="_JAqgmqy_Eey69Mzyx5xfrw" name="validarInfortmacionCreditoConsumo" content="1dd7175f-c655-4054-9450-255c5da05131" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        </formMapping>
+        <contract xmi:type="process:Contract" xmi:id="_JAqgmKy_Eey69Mzyx5xfrw">
+          <inputs xmi:type="process:ContractInput" xmi:id="_L1xFcKy_Eey69Mzyx5xfrw" name="bdDeudorSolicitudInput" type="COMPLEX" dataReference="bdDeudorSolicitud" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFcay_Eey69Mzyx5xfrw" name="nombre1" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFcqy_Eey69Mzyx5xfrw" name="nombre2" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFc6y_Eey69Mzyx5xfrw" name="apellido1" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFdKy_Eey69Mzyx5xfrw" name="apellido2" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFday_Eey69Mzyx5xfrw" name="tipo_documento" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFdqy_Eey69Mzyx5xfrw" name="numero_documento" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFd6y_Eey69Mzyx5xfrw" name="actividad_economica" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFeKy_Eey69Mzyx5xfrw" name="fecha_nacimiento" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFeay_Eey69Mzyx5xfrw" name="ciudad_residencia" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFeqy_Eey69Mzyx5xfrw" name="valor_ingresos" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFe6y_Eey69Mzyx5xfrw" name="valor_egresos" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFfKy_Eey69Mzyx5xfrw" name="tipo_residencia" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFfay_Eey69Mzyx5xfrw" name="genero" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFfqy_Eey69Mzyx5xfrw" name="tipo_contrato" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFf6y_Eey69Mzyx5xfrw" name="nivel_estudio" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFgKy_Eey69Mzyx5xfrw" name="tipo_inmueble" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFgay_Eey69Mzyx5xfrw" name="valor_arriendo" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFgqy_Eey69Mzyx5xfrw" name="celular" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFg6y_Eey69Mzyx5xfrw" name="telefono" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFhKy_Eey69Mzyx5xfrw" name="estado_civil" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFhay_Eey69Mzyx5xfrw" name="profesion" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFhqy_Eey69Mzyx5xfrw" name="correo" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFh6y_Eey69Mzyx5xfrw" name="autoriza_centrales" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_L1xFiKy_Eey69Mzyx5xfrw" name="cod_conveniodeudor" createMode="false"/>
+          </inputs>
+        </contract>
+        <expectedDuration xmi:type="expression:Expression" xmi:id="_JAqgm6y_Eey69Mzyx5xfrw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
       </elements>
       <data xmi:type="process:Data" xmi:id="_M5qZsKrCEeyrt_x-ACIiEA" name="creditoPersistenceId" dataType="_5Ez28qfTEeyTON15L57GOg">
         <defaultValue xmi:type="expression:Expression" xmi:id="_M5rAwKrCEeyrt_x-ACIiEA" content="" returnType="java.lang.Long"/>
@@ -4016,7 +4312,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_ez9h0asfEeyois0xIC3t0w" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_5OILEKfTEeyTON15L57GOg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_ExQJkKyuEeymy9-9ASBsMw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_Q2w18KzGEey69Mzyx5xfrw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_5OILEqfTEeyTON15L57GOg">
         <targetForm xmi:type="expression:Expression" xmi:id="_5OILE6fTEeyTON15L57GOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -4109,14 +4405,14 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_wPIgoafcEey3UrpwBv7rIg"/>
         <condition xmi:type="expression:Expression" xmi:id="_wPIgoqfcEey3UrpwBv7rIg" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_Q1erQKfeEey3UrpwBv7rIg" name="SI" target="_olOa4Ky8Eey69Mzyx5xfrw" source="_ItHdUKtdEeypyLCRcVZbJQ">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_Q1erQKfeEey3UrpwBv7rIg" name="SI" target="_JAoEUKy_Eey69Mzyx5xfrw" source="_ItHdUKtdEeypyLCRcVZbJQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Q1erQafeEey3UrpwBv7rIg"/>
         <condition xmi:type="expression:Expression" xmi:id="_ATn_oatZEeypyLCRcVZbJQ" name="newScript()" content="edadpersistencia == 'SI'&#xA;bdDeudorSolicitud.autoriza_centrales = edadpersistencia " interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_EkZaUKyjEeymy9-9ASBsMw" name="edadpersistencia" dataType="_5E0eAKfTEeyTON15L57GOg"/>
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_EkZaUayjEeymy9-9ASBsMw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          <referencedElements xmi:type="process:Data" xmi:id="_HQrFcKzGEey69Mzyx5xfrw" name="edadpersistencia" dataType="_5E0eAKfTEeyTON15L57GOg"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_HQrFcazGEey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
         </condition>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_S4E1IKfeEey3UrpwBv7rIg" target="_ChFQgKtrEeypyLCRcVZbJQ" source="_olOa4Ky8Eey69Mzyx5xfrw">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_S4E1IKfeEey3UrpwBv7rIg" target="_ChFQgKtrEeypyLCRcVZbJQ" source="_JAoEUKy_Eey69Mzyx5xfrw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_S4E1IafeEey3UrpwBv7rIg"/>
         <condition xmi:type="expression:Expression" xmi:id="_5dvs8qtYEeypyLCRcVZbJQ" name="" content="" interpreter="GROOVY" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
@@ -4127,7 +4423,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_fzfbUKfhEey3UrpwBv7rIg" name="SI" target="_IEiJMKvzEeymy9-9ASBsMw" source="_6vqGIKtrEeypyLCRcVZbJQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_fzfbUafhEey3UrpwBv7rIg"/>
         <condition xmi:type="expression:Expression" xmi:id="_7wFjAatYEeypyLCRcVZbJQ" name="newScript()" content="bdDeudorSolicitud.autoriza_centrales == 'SI'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_8mwxMKypEeymy9-9ASBsMw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qs-JgKzHEey69Mzyx5xfrw" name="bdDeudorSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDDeudor"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_DUA4EKfjEey3UrpwBv7rIg" target="_DT-b0KfjEey3UrpwBv7rIg" source="_oVh_kKycEeymy9-9ASBsMw">
@@ -4420,9 +4716,9 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_pC-7cqycEeymy9-9ASBsMw" type="5017"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pC-7caycEeymy9-9ASBsMw" x="1723" y="23" width="206" height="102"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_oljLAKy8Eey69Mzyx5xfrw" type="3027" element="_olOa4Ky8Eey69Mzyx5xfrw" fontName=".AppleSystemUIFont" fillColor="14334392" lineColor="10710316">
-          <children xmi:type="notation:DecorationNode" xmi:id="_oljLAqy8Eey69Mzyx5xfrw" type="5017"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oljLAay8Eey69Mzyx5xfrw" x="1468" y="277" width="233" height="116"/>
+        <children xmi:type="notation:Shape" xmi:id="_JArHoKy_Eey69Mzyx5xfrw" type="3005" element="_JAoEUKy_Eey69Mzyx5xfrw" fontName=".AppleSystemUIFont" fillColor="14334392" lineColor="10710316">
+          <children xmi:type="notation:DecorationNode" xmi:id="_JArusKy_Eey69Mzyx5xfrw" type="5005"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JArHoay_Eey69Mzyx5xfrw" x="1468" y="277" width="233" height="116"/>
         </children>
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_5OJZIafTEeyTON15L57GOg"/>
@@ -4584,14 +4880,14 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_wPJHsafcEey3UrpwBv7rIg" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wPJHsqfcEey3UrpwBv7rIg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_Q1fSUKfeEey3UrpwBv7rIg" type="4001" element="_Q1erQKfeEey3UrpwBv7rIg" source="_ItMV0KtdEeypyLCRcVZbJQ" target="_oljLAKy8Eey69Mzyx5xfrw" roundedBendpointsRadius="10" routing="Rectilinear">
+    <edges xmi:type="notation:Connector" xmi:id="_Q1fSUKfeEey3UrpwBv7rIg" type="4001" element="_Q1erQKfeEey3UrpwBv7rIg" source="_ItMV0KtdEeypyLCRcVZbJQ" target="_JArHoKy_Eey69Mzyx5xfrw" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_Q1fSU6feEey3UrpwBv7rIg" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Q1fSVKfeEey3UrpwBv7rIg" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_Q1fSUafeEey3UrpwBv7rIg" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Q1fSUqfeEey3UrpwBv7rIg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_S4E1I6feEey3UrpwBv7rIg" type="4001" element="_S4E1IKfeEey3UrpwBv7rIg" source="_oljLAKy8Eey69Mzyx5xfrw" target="_ChJh8KtrEeypyLCRcVZbJQ" roundedBendpointsRadius="10" routing="Rectilinear">
+    <edges xmi:type="notation:Connector" xmi:id="_S4E1I6feEey3UrpwBv7rIg" type="4001" element="_S4E1IKfeEey3UrpwBv7rIg" source="_JArHoKy_Eey69Mzyx5xfrw" target="_ChJh8KtrEeypyLCRcVZbJQ" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_S4FcMKfeEey3UrpwBv7rIg" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_S4FcMafeEey3UrpwBv7rIg" y="-10"/>
       </children>
