@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "FormSolicitante",
   "name" : "FormSolicitante",
-  "lastUpdate" : 1648215011997,
+  "lastUpdate" : 1648266380126,
   "rows" : [
     [
       {
@@ -645,7 +645,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -1746,7 +1746,7 @@
                         },
                         "maxLength" : {
                           "type" : "constant",
-                          "value" : 15
+                          "value" : 80
                         },
                         "min" : {
                           "type" : "constant"
