@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "FormSolicitante",
-  "name" : "FormSolicitante",
-  "lastUpdate" : 1648266380126,
+  "id" : "validaInformacionCreditoConsumoInte2",
+  "name" : "validaInformacionCreditoConsumoInte2",
+  "lastUpdate" : 1648187101192,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "f50639d0-8d1c-45ea-94a9-3a7d77720881",
+        "reference" : "429fbca0-796a-4ed2-8f0c-aff92fb1e732",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "befd4e13-92e4-4039-a5e7-54c7e8924a14",
+              "reference" : "eae6fd32-ab02-44c5-9783-46d921769ed6",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "d92b66c9-e5ac-4cf9-a7c1-f7bb81b30ac6",
+              "reference" : "6cc56d38-8b9e-4dbc-83cb-676830f1cbda",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "6ca4a4dc-c384-4cb8-8115-5cfddbb830dd",
+        "reference" : "228e66e2-7348-401c-b5ab-19e14e02354e",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "246ddabf-a64e-4750-8060-d5552f06d5e7",
+          "reference" : "7ec919ff-9936-481d-8c74-3eb0ac7d7492",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -151,7 +151,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Datos Solicitante"
+                    "value" : "Bd Deudor Solicitud"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "cd022005-3ad2-467c-b9f4-694e32ffb3e4",
+                "reference" : "a12043e0-7ed2-4333-8969-056e219b87ce",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -194,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "f81ea17c-fed3-4f2c-8ce1-aedb31adb9e6",
+                "reference" : "f1b56a15-4c46-4153-a71f-d75b6fa62225",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -202,78 +202,74 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 3
+                        "lg" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Tipo Documento"
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
                         "labelWidth" : {
                           "type" : "constant",
                           "value" : 1
                         },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "availableValues" : {
+                        "readOnly" : {
                           "type" : "constant",
-                          "value" : [
-                            "CC",
-                            "NI",
-                            "EXT",
-                            "TI"
-                          ]
+                          "value" : false
                         },
-                        "displayedKey" : {
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Nombre1"
+                        },
+                        "placeholder" : {
                           "type" : "constant"
                         },
-                        "returnedKey" : {
-                          "type" : "constant"
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.tipo_documento"
+                          "value" : "bdDeudorSolicitud.nombre1"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
-                      "reference" : "03067703-3e06-4e90-8eac-fa0a84baa8a7",
+                      "reference" : "5780d505-0498-4954-98ab-c3d3388a0760",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
-                    },
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 3
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -282,7 +278,263 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Nombre2"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudorSolicitud.nombre2"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "1728cca4-7eca-4677-98a7-4a0701afba1d",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Apellido1"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudorSolicitud.apellido1"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "850f53fd-a9e7-4fe8-9103-16d2b78f5850",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Apellido2"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudorSolicitud.apellido2"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "7b9acc32-9bda-416e-baf4-f72e3bd52449",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Tipo_documento"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudorSolicitud.tipo_documento"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "2f761902-206a-40dd-983a-2e89d01101c5",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -317,32 +569,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.numero_documento"
+                          "value" : "bdDeudorSolicitud.numero_documento"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "b661d65b-292f-4fca-a9f9-1d4124e99934",
+                      "reference" : "abc54811-e9e1-4e29-9497-3efa549e4fa9",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -352,10 +586,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -384,7 +618,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Primer Nombre"
+                          "value" : "Actividad_economica"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -399,112 +633,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.nombre1"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 25
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "290d4a51-f0f4-4421-a909-a764f4cb689e",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Segundo Nombre"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "bdDeudor.nombre2"
+                          "value" : "bdDeudorSolicitud.actividad_economica"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "d52f51f5-34c0-4cb6-870f-f6658170e227",
+                      "reference" : "624ff0ce-19ef-4f2e-a8d8-b2d67ddef4db",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -514,10 +650,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -546,7 +682,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Primer Apellido"
+                          "value" : "Fecha_nacimiento"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -561,112 +697,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.apellido1"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "0521fa6b-5615-4e79-9f71-3533ec0e26f7",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Segundo Apellido"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "bdDeudor.apellido2"
+                          "value" : "bdDeudorSolicitud.fecha_nacimiento"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "69b3b927-2eda-4594-9e80-66a90459de7c",
+                      "reference" : "2c4af0db-0b61-474e-a94b-054268d8f898",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -676,79 +714,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Actividad Económica"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "availableValues" : {
-                          "type" : "constant",
-                          "value" : [
-                            "1:Jubilado",
-                            "2: Empleado",
-                            "3 Transportador",
-                            "4: Independiente",
-                            "8: Hogar"
-                          ]
-                        },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "bdDeudor.actividad_economica"
-                        }
-                      },
-                      "reference" : "fa85d46a-d0eb-4088-9a72-361d3ae355bd",
-                      "hasValidationError" : false,
-                      "id" : "pbSelect"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -777,11 +746,10 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Edad"
+                          "value" : "Ciudad_residencia"
                         },
                         "placeholder" : {
-                          "type" : "constant",
-                          "value" : ""
+                          "type" : "constant"
                         },
                         "type" : {
                           "type" : "constant",
@@ -793,32 +761,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.fecha_nacimiento"
+                          "value" : "bdDeudorSolicitud.ciudad_residencia"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         }
                       },
-                      "reference" : "36e870c2-16f6-431e-87b4-aa13fd668102",
+                      "reference" : "a56dc984-54cf-422d-b6e8-bab549a2efb3",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -828,10 +778,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -860,7 +810,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Ciudad Residencia"
+                          "value" : "Valor_ingresos"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -875,132 +825,178 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.ciudad_residencia"
+                          "value" : "bdDeudorSolicitud.valor_ingresos"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 30
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         }
                       },
-                      "reference" : "bfb7bbe0-8ef5-4b52-9ad5-d5ed1a6cdbc7",
+                      "reference" : "39edaa3a-e88f-4d3a-ae0e-f5c7bba442b2",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Tipo Residencia"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "availableValues" : {
-                          "type" : "constant",
-                          "value" : [
-                            "Familia",
-                            "Propia sin Hipoteca",
-                            "Propia con Hipoteca",
-                            "Arrendada"
-                          ]
-                        },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "bdDeudor.tipo_residencia"
-                        }
-                      },
-                      "reference" : "f1daebb2-b892-4ab2-9458-298d3c9b7e94",
-                      "hasValidationError" : false,
-                      "id" : "pbSelect"
                     }
                   ],
                   [
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "disabled" : {
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
                           "type" : "constant",
                           "value" : false
                         },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Valor_egresos"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudorSolicitud.valor_egresos"
+                        },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
-                        },
+                          "value" : false
+                        }
+                      },
+                      "reference" : "a1dc0a7f-c44f-4dc1-a378-fc8f23e9608f",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
                         "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Tipo_residencia"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudorSolicitud.tipo_residencia"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "2a13cda0-8b80-437d-8f66-fbf2e2e4c7d6",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -1008,256 +1004,296 @@
                           "type" : "interpolation",
                           "value" : "Genero"
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
                         "placeholder" : {
-                          "type" : "interpolation"
+                          "type" : "constant"
                         },
-                        "availableValues" : {
+                        "type" : {
                           "type" : "constant",
-                          "value" : [
-                            "Masculino",
-                            "Femenino",
-                            "No Binario"
-                          ]
+                          "value" : "text"
                         },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.genero"
-                        }
-                      },
-                      "reference" : "5880f75c-e46b-4e45-9bfb-064117b837ae",
-                      "hasValidationError" : false,
-                      "id" : "pbSelect"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
+                          "value" : "bdDeudorSolicitud.genero"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
                           "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Tipo Contrato"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "availableValues" : {
-                          "type" : "constant",
-                          "value" : [
-                            "Fijo",
-                            "Indefinido",
-                            "Otro"
-                          ]
-                        },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "bdDeudor.tipo_contrato"
                         }
                       },
-                      "reference" : "8dce8cec-4f1c-404f-9071-e6ba43c37d38",
+                      "reference" : "4c332fe9-0a07-4995-a590-28d4ae7aba1f",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbInput",
+                      "description" : ""
                     }
                   ],
                   [
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Nivel Estudio"
-                        },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "availableValues" : {
-                          "type" : "constant",
-                          "value" : [
-                            "Ninguno",
-                            "Primaria",
-                            "Secundaria",
-                            "Técnico",
-                            "Tecnólogo",
-                            "Universitario  o postgrado"
-                          ]
-                        },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "bdDeudor.nivel_estudio"
-                        }
-                      },
-                      "reference" : "af8fb08a-9282-40b1-a608-e3b10b033168",
-                      "hasValidationError" : false,
-                      "id" : "pbSelect"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "hidden" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : 1
                         },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
+                        "readOnly" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tipo Inmueble"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : "Tipo_contrato"
                         },
                         "placeholder" : {
-                          "type" : "interpolation"
+                          "type" : "constant"
                         },
-                        "availableValues" : {
+                        "type" : {
                           "type" : "constant",
-                          "value" : [
-                            "Sin Activos",
-                            "Casa",
-                            "Apartamento",
-                            "Bodega"
-                          ]
+                          "value" : "text"
                         },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.tipo_inmueble"
+                          "value" : "bdDeudorSolicitud.tipo_contrato"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
-                      "reference" : "f3d08161-963c-4b7f-b109-cde2ed970646",
+                      "reference" : "b7c0dcb2-86cf-4039-8d72-4800203d1e2d",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbInput",
+                      "description" : ""
                     }
                   ],
                   [
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Nivel_estudio"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudorSolicitud.nivel_estudio"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "df44c568-e830-46a4-b969-3bf702c01067",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Tipo_inmueble"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudorSolicitud.tipo_inmueble"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "28e77c4f-09b8-418d-9445-77839042dab2",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Valor_arriendo"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudorSolicitud.valor_arriendo"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "57256e31-f3e0-4f97-81fa-a79eb635fa8c",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -1293,7 +1329,7 @@
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "number"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1301,43 +1337,27 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.celular"
+                          "value" : "bdDeudorSolicitud.celular"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 10
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         }
                       },
-                      "reference" : "e30f95dd-7f90-4b0a-babc-5472ef86f6f3",
+                      "reference" : "874614de-7390-49fa-a151-d0ef70a21a45",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
-                    },
+                    }
+                  ],
+                  [
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -1373,7 +1393,7 @@
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "number"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1381,32 +1401,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.telefono"
+                          "value" : "bdDeudorSolicitud.telefono"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 10
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         }
                       },
-                      "reference" : "9b217bcb-66fb-424f-b195-1b13e0a18152",
+                      "reference" : "6501e365-04a3-4472-a605-b80351d3337d",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -1416,10 +1418,74 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Estado_civil"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "bdDeudorSolicitud.estado_civil"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "5cd834f5-cb5a-43f7-b480-ba9c8763cb13",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -1463,114 +1529,27 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.profesion"
+                          "value" : "bdDeudorSolicitud.profesion"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 30
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         }
                       },
-                      "reference" : "b30370d4-de77-40fa-9090-23c9479731a6",
+                      "reference" : "f8d961c1-5e2e-4221-bfa0-ccb7769f689f",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Estado Civil"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "availableValues" : {
-                          "type" : "constant",
-                          "value" : [
-                            "Casado",
-                            "Viudo",
-                            "Soltero",
-                            "Unión Libre",
-                            "Separado"
-                          ]
-                        },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "bdDeudor.estado_civil"
-                        }
-                      },
-                      "reference" : "c5628995-4115-4ef4-a420-0d69611fea3c",
-                      "hasValidationError" : false,
-                      "id" : "pbSelect"
                     }
                   ],
                   [
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -1614,83 +1593,27 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.correo"
+                          "value" : "bdDeudorSolicitud.correo"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 80
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         }
                       },
-                      "reference" : "c36281c1-c403-4a61-b794-ab0dd3ee3fb1",
+                      "reference" : "111fe453-0fb1-4efd-8b49-711b6546702d",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Autoriza Centrales"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "bdDeudor.autoriza_centrales"
-                        }
-                      },
-                      "reference" : "a942fd24-2e0c-469b-8343-f938195e64b6",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox"
                     }
                   ],
                   [
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -1719,7 +1642,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Dirección"
+                          "value" : "Autoriza_centrales"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1734,112 +1657,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.direccion"
+                          "value" : "bdDeudorSolicitud.autoriza_centrales"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 80
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         }
                       },
-                      "reference" : "d956e3fe-80a2-4f67-b29b-a87955bb93e5",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Valor Ingresos"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "bdDeudor.valor_ingresos"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 15
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "3ca423b6-0e23-4e69-a8c6-621d49e996cb",
+                      "reference" : "ff30aedd-236f-444c-b30c-ea0c2a02c03a",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -1849,10 +1674,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 6,
+                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 6
+                        "lg" : 12
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -1881,14 +1706,14 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Valor Egresos"
+                          "value" : "Cod_conveniodeudor"
                         },
                         "placeholder" : {
                           "type" : "constant"
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "number"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1896,112 +1721,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "bdDeudor.valor_egresos"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 15
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "f8eec977-1438-48b3-94db-5829002f25ea",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Valor Arriendo"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "bdDeudor.valor_arriendo"
+                          "value" : "bdDeudorSolicitud.cod_conveniodeudor"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : 15
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "f19ecfe4-328a-4f74-abd0-24bfbca9ba26",
+                      "reference" : "74362c96-41a8-4bd3-8bad-72c96de5ead2",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -2037,7 +1764,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Enviar"
+                    "value" : "Submit"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -2079,32 +1806,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
                   }
                 },
-                "reference" : "0f6dffe3-e06f-4c50-98a6-894c342b81a0",
+                "reference" : "ebba6d4c-d3c9-4cd4-a324-edcb81547621",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -2156,7 +1860,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "53fcea46-9bd0-425c-85bf-1beecc744171",
+                "reference" : "f26de140-5ac4-4315-ad98-b45a1e6a680b",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -2169,16 +1873,16 @@
   ],
   "assets" : [
     {
-      "id" : "bb2cd860-87d5-442c-9ded-c2c62f1a6da6",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "cefeb60c-fe02-4895-b237-06e2050e7032",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "c47737ef-d196-4e03-a982-0bc27db18cdb",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "8ecd7205-8b46-4edc-9678-a2bb5341ab31",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -2189,13 +1893,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "bdDeudor" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.bdDeudor_ref.link}}"
       ],
       "exposed" : false
     },
@@ -2217,35 +1914,34 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.bdDeudor ){",
+        "if( $data.bdDeudorSolicitud ){",
         "\treturn {",
-        "\t\t//map bdDeudor variable to expected task contract input",
-        "\t\tbdDeudorInput: {",
-        "\t\t\tnombre1: $data.bdDeudor.nombre1 !== undefined ? $data.bdDeudor.nombre1 : null,",
-        "\t\t\tnombre2: $data.bdDeudor.nombre2 !== undefined ? $data.bdDeudor.nombre2 : null,",
-        "\t\t\tapellido1: $data.bdDeudor.apellido1 !== undefined ? $data.bdDeudor.apellido1 : null,",
-        "\t\t\tapellido2: $data.bdDeudor.apellido2 !== undefined ? $data.bdDeudor.apellido2 : null,",
-        "\t\t\ttipo_documento: $data.bdDeudor.tipo_documento !== undefined ? $data.bdDeudor.tipo_documento : null,",
-        "\t\t\tnumero_documento: $data.bdDeudor.numero_documento !== undefined ? $data.bdDeudor.numero_documento : null,",
-        "\t\t\tactividad_economica: $data.bdDeudor.actividad_economica !== undefined ? $data.bdDeudor.actividad_economica : null,",
-        "\t\t\tfecha_nacimiento: $data.bdDeudor.fecha_nacimiento !== undefined ? $data.bdDeudor.fecha_nacimiento : null,",
-        "\t\t\tciudad_residencia: $data.bdDeudor.ciudad_residencia !== undefined ? $data.bdDeudor.ciudad_residencia : null,",
-        "\t\t\tvalor_ingresos: $data.bdDeudor.valor_ingresos !== undefined ? $data.bdDeudor.valor_ingresos : null,",
-        "\t\t\tvalor_egresos: $data.bdDeudor.valor_egresos !== undefined ? $data.bdDeudor.valor_egresos : null,",
-        "\t\t\ttipo_residencia: $data.bdDeudor.tipo_residencia !== undefined ? $data.bdDeudor.tipo_residencia : null,",
-        "\t\t\tgenero: $data.bdDeudor.genero !== undefined ? $data.bdDeudor.genero : null,",
-        "\t\t\ttipo_contrato: $data.bdDeudor.tipo_contrato !== undefined ? $data.bdDeudor.tipo_contrato : null,",
-        "\t\t\tnivel_estudio: $data.bdDeudor.nivel_estudio !== undefined ? $data.bdDeudor.nivel_estudio : null,",
-        "\t\t\ttipo_inmueble: $data.bdDeudor.tipo_inmueble !== undefined ? $data.bdDeudor.tipo_inmueble : null,",
-        "\t\t\tvalor_arriendo: $data.bdDeudor.valor_arriendo !== undefined ? $data.bdDeudor.valor_arriendo : null,",
-        "\t\t\tcelular: $data.bdDeudor.celular !== undefined ? $data.bdDeudor.celular : null,",
-        "\t\t\ttelefono: $data.bdDeudor.telefono !== undefined ? $data.bdDeudor.telefono : null,",
-        "\t\t\testado_civil: $data.bdDeudor.estado_civil !== undefined ? $data.bdDeudor.estado_civil : null,",
-        "\t\t\tprofesion: $data.bdDeudor.profesion !== undefined ? $data.bdDeudor.profesion : null,",
-        "\t\t\tcorreo: $data.bdDeudor.correo !== undefined ? $data.bdDeudor.correo : null,",
-        "\t\t\tautoriza_centrales: $data.bdDeudor.autoriza_centrales !== undefined ? $data.bdDeudor.autoriza_centrales : null,",
-        "\t\t\tdireccion: $data.bdDeudor.direccion !== undefined ? $data.bdDeudor.direccion : null,",
-        "\t\t\tcod_conveniodeudor: $data.bdDeudor.cod_conveniodeudor !== undefined ? $data.bdDeudor.cod_conveniodeudor : null",
+        "\t\t//map bdDeudorSolicitud variable to expected task contract input",
+        "\t\tbdDeudorSolicitudInput: {",
+        "\t\t\tnombre1: $data.bdDeudorSolicitud.nombre1 !== undefined ? $data.bdDeudorSolicitud.nombre1 : null,",
+        "\t\t\tnombre2: $data.bdDeudorSolicitud.nombre2 !== undefined ? $data.bdDeudorSolicitud.nombre2 : null,",
+        "\t\t\tapellido1: $data.bdDeudorSolicitud.apellido1 !== undefined ? $data.bdDeudorSolicitud.apellido1 : null,",
+        "\t\t\tapellido2: $data.bdDeudorSolicitud.apellido2 !== undefined ? $data.bdDeudorSolicitud.apellido2 : null,",
+        "\t\t\ttipo_documento: $data.bdDeudorSolicitud.tipo_documento !== undefined ? $data.bdDeudorSolicitud.tipo_documento : null,",
+        "\t\t\tnumero_documento: $data.bdDeudorSolicitud.numero_documento !== undefined ? $data.bdDeudorSolicitud.numero_documento : null,",
+        "\t\t\tactividad_economica: $data.bdDeudorSolicitud.actividad_economica !== undefined ? $data.bdDeudorSolicitud.actividad_economica : null,",
+        "\t\t\tfecha_nacimiento: $data.bdDeudorSolicitud.fecha_nacimiento !== undefined ? $data.bdDeudorSolicitud.fecha_nacimiento : null,",
+        "\t\t\tciudad_residencia: $data.bdDeudorSolicitud.ciudad_residencia !== undefined ? $data.bdDeudorSolicitud.ciudad_residencia : null,",
+        "\t\t\tvalor_ingresos: $data.bdDeudorSolicitud.valor_ingresos !== undefined ? $data.bdDeudorSolicitud.valor_ingresos : null,",
+        "\t\t\tvalor_egresos: $data.bdDeudorSolicitud.valor_egresos !== undefined ? $data.bdDeudorSolicitud.valor_egresos : null,",
+        "\t\t\ttipo_residencia: $data.bdDeudorSolicitud.tipo_residencia !== undefined ? $data.bdDeudorSolicitud.tipo_residencia : null,",
+        "\t\t\tgenero: $data.bdDeudorSolicitud.genero !== undefined ? $data.bdDeudorSolicitud.genero : null,",
+        "\t\t\ttipo_contrato: $data.bdDeudorSolicitud.tipo_contrato !== undefined ? $data.bdDeudorSolicitud.tipo_contrato : null,",
+        "\t\t\tnivel_estudio: $data.bdDeudorSolicitud.nivel_estudio !== undefined ? $data.bdDeudorSolicitud.nivel_estudio : null,",
+        "\t\t\ttipo_inmueble: $data.bdDeudorSolicitud.tipo_inmueble !== undefined ? $data.bdDeudorSolicitud.tipo_inmueble : null,",
+        "\t\t\tvalor_arriendo: $data.bdDeudorSolicitud.valor_arriendo !== undefined ? $data.bdDeudorSolicitud.valor_arriendo : null,",
+        "\t\t\tcelular: $data.bdDeudorSolicitud.celular !== undefined ? $data.bdDeudorSolicitud.celular : null,",
+        "\t\t\ttelefono: $data.bdDeudorSolicitud.telefono !== undefined ? $data.bdDeudorSolicitud.telefono : null,",
+        "\t\t\testado_civil: $data.bdDeudorSolicitud.estado_civil !== undefined ? $data.bdDeudorSolicitud.estado_civil : null,",
+        "\t\t\tprofesion: $data.bdDeudorSolicitud.profesion !== undefined ? $data.bdDeudorSolicitud.profesion : null,",
+        "\t\t\tcorreo: $data.bdDeudorSolicitud.correo !== undefined ? $data.bdDeudorSolicitud.correo : null,",
+        "\t\t\tautoriza_centrales: $data.bdDeudorSolicitud.autoriza_centrales !== undefined ? $data.bdDeudorSolicitud.autoriza_centrales : null,",
+        "\t\t\tcod_conveniodeudor: $data.bdDeudorSolicitud.cod_conveniodeudor !== undefined ? $data.bdDeudorSolicitud.cod_conveniodeudor : null",
         "\t\t}",
         "\t}",
         "}"
@@ -2259,6 +1955,13 @@
       ],
       "exposed" : false
     },
+    "bdDeudorSolicitud" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.bdDeudorSolicitud_ref.link}}"
+      ],
+      "exposed" : false
+    },
     "taskId" : {
       "type" : "urlparameter",
       "value" : [
@@ -2268,7 +1971,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "740b7106-0ad4-4e0d-a558-d4ed89fd2b4c",
+  "uuid" : "92ba1612-2347-4298-bd0c-43afcde1cbd4",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
