@@ -1875,6 +1875,15 @@
             <operator xmi:type="expression:Operator" xmi:id="_edzTUax8EeyF_JDx858Mow" type="ASSIGNMENT"/>
           </outputs>
         </connectors>
+        <operations xmi:type="expression:Operation" xmi:id="__Q_KsKzIEeyYzqEjqsjBaw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="__RAY0KzIEeyYzqEjqsjBaw" name="bdSolicitud" content="bdSolicitud" type="TYPE_VARIABLE" returnType="com.company.model.BDCredito">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_CMi84KzJEeyYzqEjqsjBaw" name="bdSolicitud" dataType="_5E0eA6fTEeyTON15L57GOg" className="com.company.model.BDCredito"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="__RBm8KzIEeyYzqEjqsjBaw" name="newScript()" content="java.time.LocalDateTime.now()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+          <operator xmi:type="expression:Operator" xmi:id="__RBm8azIEeyYzqEjqsjBaw" type="JAVA_METHOD" expression="setFechafinsolicitud">
+            <inputTypes>java.lang.String</inputTypes>
+          </operator>
+        </operations>
         <loopCondition xmi:type="expression:Expression" xmi:id="_h4Z1AaylEey1r5l7t-65DA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <loopMaximum xmi:type="expression:Expression" xmi:id="_h4Z1AqylEey1r5l7t-65DA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <cardinalityExpression xmi:type="expression:Expression" xmi:id="_h4acEKylEey1r5l7t-65DA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
